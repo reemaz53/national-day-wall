@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<title>حائط المحبة للوطن - الابتدائية 247</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+/* Layout: woven-band header (title, slogan, school, principal, admin team), compose panel, then a masonry wall of greeting cards */
+:root{
+  --bg:#f3f6f2; --surface:#ffffff; --ink:#14261c; --muted:#5b6e62; --line:#d6e0d8;
+  --green:#0d6b3e; --green-deep:#084a2b; --sand:#c9a25b; --sand-soft:#f2e7cf; --mint:#dcefe3;
+  --on-green:#ffffff; --danger:#a63d2f;
+  --card-green:#0d6b3e; --card-green-ink:#ffffff;
+  --card-sand:#f2e7cf; --card-sand-ink:#3b2d12;
+  --card-white:#ffffff; --card-white-ink:#14261c;
+  --card-mint:#dcefe3; --card-mint-ink:#0f3a24;
+  --f-display:"Reem Kufi","Tajawal",system-ui,sans-serif;
+  --f-body:"Tajawal",system-ui,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c1611; --surface:#13221a; --ink:#e7f0ea; --muted:#9db3a5; --line:#24392d;
+  --green:#2f9e66; --green-deep:#0e3a24; --sand:#d8b46c; --sand-soft:#2b2416; --mint:#173326;
+  --on-green:#ffffff; --danger:#e07a6a;
+  --card-green:#1d6b44; --card-green-ink:#ffffff;
+  --card-sand:#2e2716; --card-sand-ink:#f2e2bd;
+  --card-white:#1a2b22; --card-white-ink:#e7f0ea;
+  --card-mint:#163a29; --card-mint-ink:#d5f0df;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1611; --surface:#13221a; --ink:#e7f0ea; --muted:#9db3a5; --line:#24392d;
+  --green:#2f9e66; --green-deep:#0e3a24; --sand:#d8b46c; --sand-soft:#2b2416; --mint:#173326;
+  --on-green:#ffffff; --danger:#e07a6a;
+  --card-green:#1d6b44; --card-green-ink:#ffffff;
+  --card-sand:#2e2716; --card-sand-ink:#f2e2bd;
+  --card-white:#1a2b22; --card-white-ink:#e7f0ea;
+  --card-mint:#163a29; --card-mint-ink:#d5f0df;
+  color-scheme:dark}
+
+:root{--page:#0b5a35;--page-deep:#063821;--page-ink:#f4efe2;--page-muted:#cfe3d6;--pat:rgba(201,162,91,.16);--pat2:rgba(255,255,255,.05)}
+*{box-sizing:border-box}
+body{color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;direction:rtl;
+  background-color:var(--page);
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(255,255,255,.10), transparent 70%),
+    radial-gradient(ellipse 80% 60% at 50% 110%, var(--page-deep), transparent 70%),
+    repeating-linear-gradient(45deg, transparent 0 26px, var(--pat) 26px 28px),
+    repeating-linear-gradient(-45deg, transparent 0 26px, var(--pat) 26px 28px),
+    radial-gradient(circle at center, var(--pat2) 0 3px, transparent 4px);
+  background-size:auto,auto,auto,auto,38px 38px;
+  background-attachment:fixed;min-height:100%}
+.page-band{height:14px;background:
+  conic-gradient(from 135deg at 50% 0, var(--sand) 90deg, transparent 0) 0 0/18px 7px repeat-x,
+  conic-gradient(from -45deg at 50% 100%, #b8473a 90deg, transparent 0) 0 100%/18px 7px repeat-x,
+  #1b1b1b}
+.wall-head h2{color:var(--page-ink)}
+.wall-head .count{color:var(--page-muted)}
+.hero{box-shadow:0 0 0 2px var(--sand)}
+.compose{box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.card{box-shadow:0 6px 18px rgba(0,0,0,.16)}
+
+.wrap{max-width:1100px;margin:0 auto;padding-inline:16px;padding-block:20px 48px;display:grid;gap:24px}
+
+/* Header */
+.hero{background:var(--green-deep);color:var(--on-green);border-radius:18px;overflow:hidden;position:relative}
+.weave{height:22px;background:
+  conic-gradient(from 135deg at 50% 0, var(--sand) 90deg, transparent 0) 0 0/22px 11px repeat-x,
+  conic-gradient(from -45deg at 50% 100%, #b8473a 90deg, transparent 0) 0 100%/22px 11px repeat-x,
+  #1b1b1b}
+.hero-body{display:grid;justify-items:center;text-align:center;gap:10px;padding:28px clamp(16px,4vw,40px) 26px}
+.eyebrow{font-size:.85rem;letter-spacing:.04em;color:var(--sand);font-weight:700}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.2;margin:0;text-wrap:balance}
+.slogan{font-family:var(--f-display);font-size:clamp(1.25rem,3vw,1.6rem);color:var(--sand);margin:0}
+.credits{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 0;margin-top:10px;padding-top:16px;border-top:1px solid rgba(201,162,91,.45);width:min(100%,560px)}
+.credit{flex:1 1 200px;display:grid;gap:2px;padding-inline:16px}
+.credit + .credit{border-inline-start:1px solid rgba(201,162,91,.45)}
+.credit-label,.team-label{font-size:.82rem;letter-spacing:.04em;color:var(--sand);font-weight:700}
+.credit b{font-family:var(--f-display);font-size:1.2rem;font-weight:500}
+.team{display:grid;gap:10px;justify-items:center;margin-top:8px;width:100%}
+.team-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;width:min(100%,760px)}
+.team-list li{border:1px solid rgba(201,162,91,.6);background:rgba(255,255,255,.06);border-radius:999px;padding:7px 12px;font-weight:500;font-size:.98rem;}
+@media (max-width:520px){.team-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:460px){.credit + .credit{border-inline-start:0}.credit{flex-basis:100%}}
+
+/* Compose */
+.compose{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:14px}
+.compose h2{font-family:var(--f-display);font-size:1.35rem;margin:0;color:var(--green)}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.field{display:grid;gap:4px;flex:1 1 200px;min-width:0}
+label{font-size:.9rem;font-weight:700;color:var(--muted)}
+input,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+textarea{min-height:96px;resize:vertical}
+input:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid var(--sand);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:.9rem;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip:hover{border-color:var(--green)}
+.swatches{display:flex;gap:10px;align-items:center}
+.sw{width:34px;height:34px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
+.sw[aria-pressed="true"]{outline:3px solid var(--sand);outline-offset:2px}
+.sw.green{background:var(--card-green)} .sw.sand{background:var(--card-sand)} .sw.white{background:var(--card-white)} .sw.mint{background:var(--card-mint)}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;justify-content:space-between}
+.btn{font:inherit;font-weight:700;background:var(--green);color:var(--on-green);border:0;border-radius:10px;padding:11px 26px;cursor:pointer}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.status{font-size:.92rem;color:var(--muted);min-height:1.4em}
+.status.err{color:var(--danger)}
+.count{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* Wall */
+.wall-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px}
+.wall-head h2{font-family:var(--f-display);font-size:1.5rem;margin:0}
+.wall{columns:3 260px;column-gap:16px}
+.card{break-inside:avoid;margin:0 0 16px;border-radius:14px;padding:16px 18px 14px;display:grid;gap:10px;border:1px solid var(--line);animation:pop .35s ease both}
+.card.green{background:var(--card-green);color:var(--card-green-ink);border-color:var(--sand)}
+.card.sand{background:var(--card-sand);color:var(--card-sand-ink)}
+.card.white{background:var(--card-white);color:var(--card-white-ink)}
+.card.mint{background:var(--card-mint);color:var(--card-mint-ink)}
+.card p{margin:0;font-size:1.08rem;white-space:pre-wrap;overflow-wrap:anywhere}
+.card footer{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:.86rem;opacity:.85}
+.card .who{font-weight:700}
+.del{font:inherit;font-size:.8rem;background:transparent;color:inherit;border:1px solid currentColor;border-radius:8px;padding:2px 10px;cursor:pointer;opacity:.75}
+.del:hover{opacity:1}
+.lead{display:grid}
+.card.lead-card{margin:0;padding:26px clamp(18px,4vw,40px) 20px;border:2px solid var(--sand);text-align:center;justify-items:center;gap:14px}
+.card.lead-card p{font-size:clamp(1.15rem,2.4vw,1.4rem);line-height:1.9;max-width:62ch}
+.card.lead-card footer{justify-content:center;width:100%}
+.card.lead-card .who{font-family:var(--f-display);font-size:1.15rem}
+.lead-tag{font-size:.82rem;font-weight:700;letter-spacing:.04em;color:var(--sand);border-bottom:1px solid var(--sand);padding-bottom:4px}
+.credits-foot{display:grid;justify-items:center;gap:12px;text-align:center;color:var(--page-ink);padding-top:22px;border-top:1px solid rgba(201,162,91,.45)}
+.staff-groups{display:grid;gap:26px}
+.staff-group{display:grid;gap:12px}
+.staff-group h3{margin:0;font-family:var(--f-display);font-weight:500;font-size:1.15rem;color:var(--sand);display:flex;align-items:center;gap:12px}
+.staff-group h3::after{content:"";flex:1;height:1px;background:rgba(201,162,91,.45)}
+.staff-wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.card.staff{padding:22px 22px 16px;gap:14px}
+.card.staff p{font-family:var(--f-display);font-size:1.18rem;line-height:1.8}
+.card.staff .who{font-size:1rem}
+.who-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+.cls{font-size:.82rem;font-weight:700;border:1px solid currentColor;border-radius:999px;padding:0 9px;opacity:.85;font-variant-numeric:tabular-nums}
+.del{opacity:.45}
+.empty{background:rgba(0,0,0,.15);border:2px dashed rgba(244,239,226,.35);border-radius:16px;padding:32px 20px;text-align:center;color:var(--page-muted);display:grid;gap:6px}
+.empty strong{font-family:var(--f-display);font-size:1.25rem;color:var(--page-ink)}
+.notice{background:var(--sand-soft);border-radius:12px;padding:12px 16px;font-size:.95rem}
+@keyframes pop{from{transform:translateY(6px);opacity:.4}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.card{animation:none}}
+</style>
+
+<div class="page-band" aria-hidden="true"></div>
+<div class="wrap">
+  <header class="hero">
+    <div class="weave" aria-hidden="true"></div>
+    <div class="hero-body">
+      <div class="eyebrow">اليوم الوطني السعودي · ٢٣ سبتمبر ٢٠٢٦</div>
+      <h1>حائط المحبة للوطن</h1>
+      <p class="slogan">عزّنا بطبعنا</p>
+      <div class="credits">
+        <div class="credit"><span class="credit-label">المدرسة</span><b>الابتدائية ٢٤٧</b></div>
+        <div class="credit"><span class="credit-label">مديرة المدرسة</span><b>أ. فضة المطيري</b></div>
+      </div>
+      <div class="team">
+        <span class="team-label">تصميم وتنسيق الإداريات</span>
+        <ul class="team-list">
+          <li>مضاوي القحطاني</li>
+          <li>بشرى البشري</li>
+          <li>آلاء الفراج</li>
+          <li>شريفة الشهراني</li>
+        </ul>
+      </div>
+    </div>
+    <div class="weave" aria-hidden="true"></div>
+  </header>
+
+  <section id="lead" class="lead" aria-label="كلمة مديرة المدرسة" hidden></section>
+
+
+
+  <section id="staff-sec" aria-labelledby="staff-title" style="display:grid;gap:14px" hidden>
+    <div class="wall-head"><h2 id="staff-title">كلمات منسوبات المدرسة</h2></div>
+    <div id="staff" class="staff-groups"></div>
+  </section>
+
+  <section aria-labelledby="wall-title" style="display:grid;gap:14px">
+    <div class="wall-head">
+      <h2 id="wall-title">مشاركات الطالبات</h2>
+      <span class="count" id="total"></span>
+    </div>
+    <div id="empty" class="empty">
+      <strong>الحائط بانتظار أول رسالة</strong>
+      <span>لا توجد مشاركات بعد.</span>
+    </div>
+    <div id="wall" class="wall"></div>
+  </section>
+</div>
+<div class="page-band" aria-hidden="true"></div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const toAr = n => String(n).replace(/\d/g, d => "٠١٢٣٤٥٦٧٨٩"[d]);
+  const wall = $("#wall"), empty = $("#empty");
+  const isOwner = false, me = null;
+  const docs = new Map();
+
+  function makeCard(it, staff) {
+    const card = document.createElement("article");
+    card.className = "card " + (staff ? "staff " : "") + (["green","sand","white","mint"].includes(it.c) ? it.c : "white");
+    const p = document.createElement("p"); p.textContent = it.m;
+    const f = document.createElement("footer");
+    const who = document.createElement("span"); who.className = "who-line";
+    const b = document.createElement("span"); b.className = "who"; b.textContent = it.n || "مشاركة";
+    who.append(b);
+    if (it.k) { const k = document.createElement("span"); k.className = "cls"; k.textContent = it.k; who.append(k); }
+    f.append(who);
+    if (isOwner || it.owner === me) {
+      const d = document.createElement("button"); d.className = "del"; d.type = "button"; d.textContent = "حذف";
+      d.setAttribute("aria-label", "حذف رسالة " + (it.n || ""));
+      d.addEventListener("click", () => removeItem(it.owner, it.id));
+      f.append(d);
+    }
+    card.append(p, f);
+    return card;
+  }
+
+  function render() {
+    const all = [];
+    docs.forEach((items, owner) => items.forEach(it => all.push({ ...it, owner })));
+    const lead = all.filter(x => x.p >= 30);
+    const leadEl = $("#lead");
+    leadEl.hidden = lead.length === 0;
+    leadEl.replaceChildren(...lead.map(it => {
+      const c = makeCard(it, true); c.classList.add("lead-card");
+      const tag = document.createElement("span"); tag.className = "lead-tag"; tag.textContent = "كلمة مديرة المدرسة";
+      c.prepend(tag); return c;
+    }));
+    const pinned = all.filter(x => x.p && x.p < 30).sort((a, b) => (b.p - a.p) || (a.t - b.t));
+    const rest = all.filter(x => !x.p).sort((a, b) => (a.o ?? 1e9) - (b.o ?? 1e9) || b.t - a.t);
+    $("#staff-sec").hidden = pinned.length === 0;
+    const order = ["الإدارة المدرسية","الإداريات","التوجيه الطلابي","المعلمات"];
+    const groups = new Map();
+    pinned.forEach(it => { const g = it.g || "الإداريات"; if (!groups.has(g)) groups.set(g, []); groups.get(g).push(it); });
+    const names = [...groups.keys()].sort((a, b) => (order.indexOf(a) + 99) % 99 - (order.indexOf(b) + 99) % 99);
+    $("#staff").replaceChildren(...names.map(g => {
+      const box = document.createElement("div"); box.className = "staff-group";
+      const h = document.createElement("h3"); h.textContent = g;
+      const grid = document.createElement("div"); grid.className = "staff-wall";
+      grid.append(...groups.get(g).map(it => makeCard(it, true)));
+      box.append(h, grid); return box;
+    }));
+    empty.hidden = rest.length > 0;
+    $("#total").textContent = rest.length ? toAr(rest.length) + " مشاركة" : "";
+    wall.replaceChildren(...rest.map(it => makeCard(it, false)));
+  }
+
+  const DATA = {"staff": [{"id": "lead", "n": "مديرة المدرسة: فضة المطيري", "k": "", "m": "بناتي الغاليات، ومنسوبات مدرستنا الكريمات: في ذكرى توحيد وطننا الغالي نستحضر مسيرة عزٍّ بناها الآباء والأجداد، ونجدّد العهد أن نغرس في نفوس بناتنا حب الوطن والانتماء إليه قولًا وعملًا. حفظ الله المملكة العربية السعودية، وأدام عليها أمنها ورخاءها، وكل عام ووطننا في عزٍّ وشموخ.", "c": "green", "t": 1790199999997, "p": 30, "g": ""}, {"id": "wakeela", "n": "الوكيلة: منيرة العنزي", "k": "", "m": "وطنٌ نفاخر به الدنيا، ونرى مستقبله في ضحكات طالباتنا وطموحهن. كل عام وبلادنا شامخة، وعزّنا بطبعنا.", "c": "mint", "t": 1790199999998, "p": 20, "g": "الإدارة المدرسية"}, {"id": "raeda", "n": "رائدة النشاط: عزيزة القحطاني", "k": "", "m": "في يوم الوطن تتزيّن مدرستنا بالأخضر، وتتسابق بناتنا بالكلمة والرسمة والنشيد. شكرًا لكل من شاركت، ودام وطننا مصدر فخرنا وإلهامنا.", "c": "white", "t": 1790199999999, "p": 19, "g": "الإدارة المدرسية"}, {"id": "s0", "n": "الإدارية: شريفة الشهراني", "k": "", "m": "في يومك يا وطني نجدّد العهد والولاء، ونفخر بأرضٍ جمعتنا على المحبة والعزّ. دمتَ شامخًا يا موطن الخير.", "c": "sand", "t": 1790200000000, "p": 15, "g": "الإداريات"}, {"id": "s1", "n": "الإدارية: بشرى البشري", "k": "", "m": "وطنٌ نسكنه ويسكننا، ومجدٌ نرويه لأجيالنا جيلًا بعد جيل. كل عام وبلادنا في رفعةٍ وأمان، وعزّنا بطبعنا.", "c": "green", "t": 1790200000001, "p": 15, "g": "الإداريات"}, {"id": "s2", "n": "الإدارية: آلاء الفراج", "k": "", "m": "حين نقول السعودية نقول الفخر كله؛ أرض الحرمين وموطن الكرام. حفظ الله وطننا وأدام عليه نعمة الأمن والرخاء.", "c": "mint", "t": 1790200000002, "p": 15, "g": "الإداريات"}, {"id": "s3", "n": "الإدارية: مضاوي القحطاني", "k": "", "m": "يومٌ نرفع فيه رايتنا خفّاقة، ونرى في عيون بناتنا مستقبلًا مشرقًا لوطنٍ يستحق منّا كل الوفاء.", "c": "white", "t": 1790200000003, "p": 15, "g": "الإداريات"}, {"id": "s4", "n": "الإدارية: لطيفة الحربي", "k": "", "m": "اللهم احفظ بلادنا المملكة العربية السعودية، وأدم عليها نعمة الأمن والإيمان، ووفّق قيادتها لما تحب وترضى، واجعلها دائمًا دار عزٍّ ورخاء.", "c": "sand", "t": 1790200000004, "p": 15, "g": "الإداريات"}, {"id": "x0", "n": "الإدارية: مها الحربي", "k": "", "m": "وطني، يا قصة فخرٍ نرويها كل صباح؛ أنت الأمان الذي نعمل في ظلّه، والعزّ الذي نرفع به رؤوسنا. دمتَ عاليًا شامخًا.", "c": "green", "t": 1790200000010, "p": 15, "g": "الإداريات"}, {"id": "x1", "n": "الإدارية: نجود القحطاني", "k": "", "m": "في ذكرى التوحيد نتذكّر أن ما نحن فيه من خيرٍ نعمةٌ تستحق الشكر والوفاء. كل عام ومملكتنا بألف خير.", "c": "mint", "t": 1790200000011, "p": 15, "g": "الإداريات"}, {"id": "x2", "n": "الإدارية: خلود السبيعي", "k": "", "m": "أرضٌ طيبة، وقيادةٌ حكيمة، وشعبٌ وفيّ؛ ثلاثٌ صنعت لنا وطنًا نحبه ونفديه. عزّنا بطبعنا ودام عزّك يا وطن.", "c": "white", "t": 1790200000012, "p": 15, "g": "الإداريات"}, {"id": "x3", "n": "الإدارية: مها الحجيلان", "k": "", "m": "نحتفي بك يا وطني حبًّا وانتماءً، ونعاهدك أن نكون خير سندٍ لبناتك في طريق العلم والعطاء.", "c": "sand", "t": 1790200000013, "p": 15, "g": "الإداريات"}, {"id": "x4", "n": "الإدارية: جميله المطيري", "k": "", "m": "يا وطن الخير والكرم، لك في القلب مكانٌ لا يتغيّر، ولك منّا دعاءٌ لا ينقطع بأن يحفظك الله ويُديم عزّك.", "c": "green", "t": 1790200000014, "p": 15, "g": "الإداريات"}, {"id": "x5", "n": "الإدارية: حصه الشمري", "k": "", "m": "يومٌ أخضر في تقويمنا وفي قلوبنا؛ نفرح فيه بوطنٍ جمعنا، ونفخر بماضيه، ونتفاءل بمستقبله المشرق.", "c": "mint", "t": 1790200000015, "p": 15, "g": "الإداريات"}, {"id": "x6", "n": "الإدارية: رفعه العتيبي", "k": "", "m": "وطنٌ نعيش خيره كل يوم، ونرى إنجازاته تكبر عامًا بعد عام. حفظ الله بلادنا وأدام عليها الأمن والاستقرار.", "c": "white", "t": 1790200000016, "p": 15, "g": "الإداريات"}, {"id": "x7", "n": "الإدارية: شيخة الحربي", "k": "", "m": "حبّ الوطن ليس كلمةً تُقال، بل عملٌ نتقنه وأمانةٌ نؤدّيها. كل عام ووطننا في رفعةٍ ونماء.", "c": "sand", "t": 1790200000017, "p": 15, "g": "الإداريات"}, {"id": "x8", "n": "الإدارية: نوف الايداء", "k": "", "m": "يا مملكة العزّ، أنتِ الحكاية التي نحكيها لبناتنا بفخر، والراية التي نرفعها بحب. دمتِ لنا ودمنا لكِ.", "c": "green", "t": 1790200000018, "p": 15, "g": "الإداريات"}, {"id": "x9", "n": "الإدارية: مها الشهري", "k": "", "m": "تحت سمائك يا وطني تزهر الأحلام وتتحقق، فشكرًا لك على الأمان، وشكرًا لكل يدٍ بنت وتبني مجدك.", "c": "mint", "t": 1790200000019, "p": 15, "g": "الإداريات"}, {"id": "x10", "n": "الموجهة الطلابية: الجازي المطيري", "k": "", "m": "بناتنا هنّ غرسُ الوطن وثمرته؛ نرعاهن اليوم بالحب والقيم ليكنّ غدًا فخرًا لبلادهن. كل عام ووطننا في أمانٍ وسلام.", "c": "white", "t": 1790200000020, "p": 14, "g": "التوجيه الطلابي"}, {"id": "x11", "n": "الموجهة الطلابية: شيخة اليامي", "k": "", "m": "الانتماء للوطن قيمةٌ نزرعها في قلوب بناتنا بالكلمة الطيبة والقدوة الحسنة. حفظ الله المملكة وأدام عليها نعمها.", "c": "sand", "t": 1790200000021, "p": 14, "g": "التوجيه الطلابي"}, {"id": "x12", "n": "المعلمة: مها المطيري", "k": "", "m": "نعلّم بناتنا الحروف والأرقام، ونعلّمهن قبلها أن الوطن أمانة، وأن حبّه يبدأ بالإتقان والاحترام. دام عزّك يا وطن.", "c": "green", "t": 1790200000022, "p": 13, "g": "المعلمات"}, {"id": "x13", "n": "المعلمة: صفية المخلفي", "k": "", "m": "في كل صباحٍ نرى الوطن في عيون طالباتنا؛ طموحًا يكبر، وأملًا يتجدّد. كل عام وبلادنا في عزٍّ وتقدّم.", "c": "mint", "t": 1790200000023, "p": 13, "g": "المعلمات"}, {"id": "x14", "n": "المعلمة: حصه الفوزان", "k": "", "m": "وطني، يا موطن الحرمين وقبلة المسلمين، لك الفخر ما بقي الدهر، ولك منّا الولاء والدعاء.", "c": "white", "t": 1790200000024, "p": 13, "g": "المعلمات"}, {"id": "x15", "n": "المعلمة: العنود القحطاني", "k": "", "m": "نربط دروسنا بالحياة، وأجمل درسٍ نقدّمه لبناتنا هو حب الوطن والعمل لأجله. عزّنا بطبعنا.", "c": "sand", "t": 1790200000025, "p": 13, "g": "المعلمات"}, {"id": "x16", "n": "المعلمة: ايمان البلوي", "k": "", "m": "كما تُبنى المسائل خطوةً بخطوة، بُني وطننا بالعزيمة والصبر حتى صار شامخًا بين الأمم. دمتَ يا وطني.", "c": "green", "t": 1790200000026, "p": 13, "g": "المعلمات"}, {"id": "x17", "n": "المعلمة: نوره النفيعي", "k": "", "m": "لو أحصينا نِعم الوطن ما أحصيناها؛ أمنٌ وخيرٌ ووحدة. فالحمد لله على وطنٍ نفخر به كل يوم.", "c": "mint", "t": 1790200000027, "p": 13, "g": "المعلمات"}, {"id": "x18", "n": "المعلمة: مها المنيف", "k": "", "m": "تتزيّن مدرستنا بالأخضر، وتتزيّن قلوبنا بالفخر. كل عام ووطننا الغالي في رخاءٍ وأمان.", "c": "white", "t": 1790200000028, "p": 13, "g": "المعلمات"}, {"id": "x19", "n": "المعلمة: نوره الراقي", "k": "", "m": "Proud to be Saudi — فخورون بوطنٍ يعلّمنا أن نحلم ونحقق. كل عام والمملكة بخير.", "c": "sand", "t": 1790200000029, "p": 13, "g": "المعلمات"}, {"id": "x20", "n": "المعلمة: منى القحطاني", "k": "", "m": "وطني، أنت الدرس الأول في الانتماء، والحكاية الأجمل في الوفاء. حفظك الله وأدام مجدك.", "c": "green", "t": 1790200000030, "p": 13, "g": "المعلمات"}, {"id": "x21", "n": "المعلمة: عائشه المويس", "k": "", "m": "نغرس في بناتنا اليوم قيم الوطن، ليحملن رايته غدًا بالعلم والأخلاق. دام عزّ بلادنا.", "c": "mint", "t": 1790200000031, "p": 13, "g": "المعلمات"}, {"id": "x22", "n": "المعلمة: عبير القحطاني", "k": "", "m": "من العلم نبدأ، وإلى الوطن نعود بثمرة ما تعلّمنا. كل عام والمملكة منارةٌ للعلم والإنجاز.", "c": "white", "t": 1790200000032, "p": 13, "g": "المعلمات"}, {"id": "x23", "n": "المعلمة: فاطمه الحربي", "k": "", "m": "في وطني تتجلّى عظمة الخالق في أرضٍ واسعةٍ وسماءٍ صافية وشعبٍ كريم. حفظ الله بلادنا من كل سوء.", "c": "sand", "t": 1790200000033, "p": 13, "g": "المعلمات"}, {"id": "x24", "n": "المعلمة: علياء السحيمي", "k": "", "m": "لك يا وطني حبٌّ يكبر معنا، ووفاءٌ لا يزول. كل عام وأنت الأجمل والأعزّ.", "c": "green", "t": 1790200000034, "p": 13, "g": "المعلمات"}, {"id": "x25", "n": "المعلمة: مصباح العتيبي", "k": "", "m": "وطنٌ يضيء دروبنا بالأمن كما يضيء المصباح ليله؛ فدمتَ نورًا وعزًّا لأبنائك وبناتك.", "c": "mint", "t": 1790200000035, "p": 13, "g": "المعلمات"}, {"id": "x26", "n": "المعلمة: نوف الرشيد", "k": "", "m": "فخرٌ أن ننتمي لهذه الأرض، وشرفٌ أن نُسهم في بناء أجيالها. كل عام ووطننا شامخ.", "c": "white", "t": 1790200000036, "p": 13, "g": "المعلمات"}, {"id": "x27", "n": "المعلمة: فاطمه الشهري", "k": "", "m": "نحتفل بك يا وطني بقلوبٍ ممتنّة، ودعاءٍ صادق أن يحفظك الله ويُديم عليك الأمن والإيمان.", "c": "sand", "t": 1790200000037, "p": 13, "g": "المعلمات"}, {"id": "x28", "n": "المعلمة: سحر العتيبي", "k": "", "m": "وطني، مع كل فكرةٍ جديدة تتعلمها بناتنا يكبر حلمك ويقترب. دمتَ عزيزًا شامخًا، وعزّنا بطبعنا.", "c": "green", "t": 1790200000038, "p": 13, "g": "المعلمات"}], "grade1-class1": [{"id": "g0", "n": "الجوهرة العجمي", "k": "فصل 1/1", "m": "أحب وطني كثيرًا", "c": "green", "t": 1790200000100, "o": 0}, {"id": "g2", "n": "الجوهرة الرويلي", "k": "فصل 1/1", "m": "أنا سعودية وأفتخر", "c": "white", "t": 1790200000102, "o": 2}, {"id": "g4", "n": "الجوهرة آل دوحان", "k": "فصل 1/1", "m": "أحبك يا سعودية", "c": "green", "t": 1790200000104, "o": 4}, {"id": "g6", "n": "ترانيم الغامدي", "k": "فصل 1/1", "m": "شكرًا يا وطني", "c": "white", "t": 1790200000106, "o": 6}, {"id": "g8", "n": "جمان الرشيد", "k": "فصل 1/1", "m": "عزّنا بطبعنا", "c": "green", "t": 1790200000108, "o": 8}, {"id": "g10", "n": "جمانا العنزي", "k": "فصل 1/1", "m": "يا رب احفظ وطني", "c": "white", "t": 1790200000110, "o": 10}, {"id": "g12", "n": "دينا العنزي", "k": "فصل 1/1", "m": "السعودية في قلبي", "c": "green", "t": 1790200000112, "o": 12}, {"id": "g14", "n": "ريتال العتيبي", "k": "فصل 1/1", "m": "دام عزك يا وطن", "c": "white", "t": 1790200000114, "o": 14}, {"id": "g16", "n": "شادن الشيباني", "k": "فصل 1/1", "m": "أفرح بيوم وطني", "c": "green", "t": 1790200000116, "o": 16}, {"id": "g18", "n": "شيخه الحويماني", "k": "فصل 1/1", "m": "أحبك يا مملكتي", "c": "white", "t": 1790200000118, "o": 18}, {"id": "g20", "n": "شيهانة آل مخلص", "k": "فصل 1/1", "m": "أرسم علم وطني بحب", "c": "green", "t": 1790200000120, "o": 20}, {"id": "g22", "n": "غاده العتيبي", "k": "فصل 1/1", "m": "كل يوم أحب وطني أكثر", "c": "white", "t": 1790200000122, "o": 22}, {"id": "g24", "n": "غالية العتيبي", "k": "فصل 1/1", "m": "يا رب اجعل وطني سعيدًا", "c": "green", "t": 1790200000124, "o": 24}, {"id": "g26", "n": "فضيلة الزهراني", "k": "فصل 1/1", "m": "علمنا الأخضر يرفرف", "c": "white", "t": 1790200000126, "o": 26}, {"id": "g28", "n": "فهدة المطوع", "k": "فصل 1/1", "m": "وطني أغلى شيء", "c": "green", "t": 1790200000128, "o": 28}, {"id": "g30", "n": "كيان الدوسري", "k": "فصل 1/1", "m": "أحب أن أخدم وطني", "c": "white", "t": 1790200000130, "o": 30}, {"id": "g32", "n": "لانا القحطاني", "k": "فصل 1/1", "m": "وطني يكبر ونحن نكبر", "c": "green", "t": 1790200000132, "o": 32}, {"id": "g34", "n": "ماسه العبد", "k": "فصل 1/1", "m": "أحب مدرستي ووطني", "c": "white", "t": 1790200000134, "o": 34}, {"id": "g36", "n": "مسك الغامدي", "k": "فصل 1/1", "m": "السعودية أحلى بلاد", "c": "green", "t": 1790200000136, "o": 36}, {"id": "g38", "n": "مهره العتيبي", "k": "فصل 1/1", "m": "أحب الرياض عاصمة وطني", "c": "white", "t": 1790200000138, "o": 38}, {"id": "g40", "n": "ميلاف النفيعي", "k": "فصل 1/1", "m": "اللهم احفظ بلادي", "c": "green", "t": 1790200000140, "o": 40}, {"id": "g42", "n": "نوره السهلي", "k": "فصل 1/1", "m": "وطني فيه الخير", "c": "white", "t": 1790200000142, "o": 42}, {"id": "g44", "n": "هبه العنزي", "k": "فصل 1/1", "m": "وطني بيت الجميع", "c": "green", "t": 1790200000144, "o": 44}, {"id": "g46", "n": "هند العتيبي", "k": "فصل 1/1", "m": "فرحتي بوطني كبيرة", "c": "white", "t": 1790200000146, "o": 46}, {"id": "g48", "n": "ورد العوفي", "k": "فصل 1/1", "m": "أبتسم لأني سعودية", "c": "green", "t": 1790200000148, "o": 48}], "grade1-class2": [{"id": "g1", "n": "ألين العنزي", "k": "فصل 1/2", "m": "وطني أجمل وطن", "c": "mint", "t": 1790200000101, "o": 1}, {"id": "g3", "n": "البتول سليمان", "k": "فصل 1/2", "m": "كل عام ووطني بخير", "c": "sand", "t": 1790200000103, "o": 3}, {"id": "g5", "n": "ايلان الزهراني", "k": "فصل 1/2", "m": "علم بلادي أخضر جميل", "c": "mint", "t": 1790200000105, "o": 5}, {"id": "g7", "n": "جنى بن طواله", "k": "فصل 1/2", "m": "وطني بيتي الكبير", "c": "sand", "t": 1790200000107, "o": 7}, {"id": "g9", "n": "ديالا العتيبي", "k": "فصل 1/2", "m": "أحب بلادي وأهلي", "c": "mint", "t": 1790200000109, "o": 9}, {"id": "g11", "n": "ديم فيصل العتيبي", "k": "فصل 1/2", "m": "وطني فرحتي", "c": "sand", "t": 1790200000111, "o": 11}, {"id": "g13", "n": "ديم معاذ العتيبي", "k": "فصل 1/2", "m": "أحب علم بلادي", "c": "mint", "t": 1790200000113, "o": 13}, {"id": "g15", "n": "رنيم العمري", "k": "فصل 1/2", "m": "وطني غالٍ عليّ", "c": "sand", "t": 1790200000115, "o": 15}, {"id": "g17", "n": "رهف الزهراني", "k": "فصل 1/2", "m": "وطني نور قلبي", "c": "mint", "t": 1790200000117, "o": 17}, {"id": "g19", "n": "ريم العتيبي", "k": "فصل 1/2", "m": "بلادي بلادي", "c": "sand", "t": 1790200000119, "o": 19}, {"id": "g21", "n": "ريما الشهري", "k": "فصل 1/2", "m": "وطني أمان", "c": "mint", "t": 1790200000121, "o": 21}, {"id": "g23", "n": "سارة العمري", "k": "فصل 1/2", "m": "نحن نحب السعودية", "c": "sand", "t": 1790200000123, "o": 23}, {"id": "g25", "n": "ساره العنزي", "k": "فصل 1/2", "m": "وطني جميل مثل الورد", "c": "mint", "t": 1790200000125, "o": 25}, {"id": "g27", "n": "سلطانه العتيبي", "k": "فصل 1/2", "m": "أنا بنت السعودية", "c": "sand", "t": 1790200000127, "o": 27}, {"id": "g29", "n": "سمو السفياني", "k": "فصل 1/2", "m": "يوم وطني يوم سعيد", "c": "mint", "t": 1790200000129, "o": 29}, {"id": "g31", "n": "غاليه العتيبي", "k": "فصل 1/2", "m": "أتعلّم لأجل وطني", "c": "sand", "t": 1790200000131, "o": 31}, {"id": "g33", "n": "فهدة العنزي", "k": "فصل 1/2", "m": "شكرًا لمن يحمي وطني", "c": "mint", "t": 1790200000133, "o": 33}, {"id": "g35", "n": "لمى بن طواله", "k": "فصل 1/2", "m": "وطني الحبيب", "c": "sand", "t": 1790200000135, "o": 35}, {"id": "g37", "n": "ليان العرجاني", "k": "فصل 1/2", "m": "قلبي أخضر لوطني", "c": "mint", "t": 1790200000137, "o": 37}, {"id": "g39", "n": "ميرال الدائل", "k": "فصل 1/2", "m": "يا وطني أنت الأجمل", "c": "sand", "t": 1790200000139, "o": 39}, {"id": "g41", "n": "هلا العريعر", "k": "فصل 1/2", "m": "أنا فخورة بوطني", "c": "mint", "t": 1790200000141, "o": 41}, {"id": "g43", "n": "وتين حميد", "k": "فصل 1/2", "m": "أحب وطني من كل قلبي", "c": "sand", "t": 1790200000143, "o": 43}, {"id": "g45", "n": "ورد الحرازي", "k": "فصل 1/2", "m": "علم بلادي عالٍ دائمًا", "c": "mint", "t": 1790200000145, "o": 45}, {"id": "g47", "n": "يارا آل معيض", "k": "فصل 1/2", "m": "كل عام وأنت بخير يا وطني", "c": "sand", "t": 1790200000147, "o": 47}, {"id": "g49", "n": "ياسمين الشمري", "k": "فصل 1/2", "m": "وطني حلو وأنا أحبه", "c": "mint", "t": 1790200000149, "o": 49}]};
+  Object.entries(DATA).forEach(([k,v]) => docs.set(k, v));
+
+  render();
+})();
+</script>
+
+</body>
+</html>
